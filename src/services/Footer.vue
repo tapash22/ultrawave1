@@ -1,0 +1,145 @@
+<template>
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Innovation For Communications</h5>
+        <p class="wrap">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          accusamus eaque ea dolor porro a, architecto doloribus quasi corporis
+          iusto repellendus praesentium aspernatur, alias deleniti vitae dolorem
+          facere repudiandae id.
+        </p>
+      </div>
+      <div class="col-md-2">
+        <h5>Graphics</h5>
+        <ul>
+          <li>Logo Design</li>
+          <li>Banner</li>
+          <li>Vector Shape</li>
+          <li>Animation</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Website</h5>
+        <ul>
+          <li>Static website</li>
+          <li>Semi-Dynamic</li>
+          <li>Dynamic</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Photography</h5>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Digital Markating</h5>
+        <ul>
+          <li>Email</li>
+          <li>Sms Binding</li>
+          <li>Faccbook Boost</li>
+          <li>Facebook page Maintain</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bottom">
+      <div class="col-md-12">
+        <p>All right reserved in &copy; Ultrawave Communications</p>
+      </div>
+
+    </div>
+  </div>
+</template>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Poppins:wght@100&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  margin: 0;
+  position: relative;
+  background: rgb(32, 32, 32);
+}
+.row {
+  padding: 5px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 32, 32, 0.747);
+}
+h5 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff4500;
+  text-align: justify;
+  padding: 5px;
+  margin: 0;
+}
+.col-md-4 {
+  width: 30%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+}
+.col-md-4 .wrap {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+  padding: 10px;
+  margin: 0;
+  color: rgb(163, 162, 162);
+}
+.col-md-2 {
+  width: 17%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+}
+.col-md-2 ul {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  border-left: 1px solid rgb(163, 162, 162);
+}
+.col-md-2 ul li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(163, 162, 162);
+  text-align: left;
+  padding: 5px;
+  margin: 0;
+}
+.bottom{
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  margin: 0;
+  border-top: 1px solid #ff4500;
+}
+.bottom .col-md-12{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.bottom .col-md-12 p{
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px;
+  margin: 0;
+  color:#ff4500;
+  text-align: center;
+}
+
+</style>
