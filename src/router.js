@@ -1,16 +1,26 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./components/pages/Home.vue";
-import About from "./components/pages/About.vue";
-import Services from "./components/pages/Services.vue";
-import Contactus from "./components/pages/Contactus.vue";
+import GraphicsSolution from "./components/pages/GraphicsSolution.vue";
+import WebSolution from "./components/pages/WebSolution.vue";
+import PhotographySolution from './components/pages/PhotographySolution.vue';
+import DigitalSolution from './components/pages/DigitalSolution.vue';
+
+import Basic from './components/pages/Basic.vue';
+import Silver from './components/pages/Silver.vue';
+import Gold from './components/pages/Gold.vue';
+
 
 const routes = [
   { path: "/", name: "Home", component: Home,children:[
-    { path: "about", name: "About", component: About },
-    { path: "services", name: "Services", component: Services },
-    { path: "contactus", name: "Contactus", component: Contactus },
-  ]
-},
+   
+  ] },
+  { path:"/graphics", component:GraphicsSolution },
+  { path:"/website", component: WebSolution },
+  { path:"/photoraphy", component:PhotographySolution },
+  { path:"/dm", component: DigitalSolution },
+  { path:"/basic", component: Basic },
+  { path:"/silver", component: Silver },
+  { path:"/gold", component: Gold },
 
 ];
 

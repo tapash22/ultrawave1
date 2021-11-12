@@ -40,7 +40,7 @@
         <h5>Digital Markating</h5>
         <ul>
           <li>Email</li>
-          <li>Sms Binding</li>
+          <li>Bulk SMS</li>
           <li>Faccbook Boost</li>
           <li>Facebook page Maintain</li>
         </ul>

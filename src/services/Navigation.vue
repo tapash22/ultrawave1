@@ -2,10 +2,10 @@
   <div class="navigation">
     <nav>
       <a class="brand" href="/">
-        <img src="../assets/image/logo1.png" />
+        <img src="../assets/image/log.png" />
       </a>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><router-link to="/">Home</router-link></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#plans">Plans</a></li>
@@ -124,26 +124,27 @@ export default {
   background: #fff;
 }
 .navigation nav .brand {
-  width: 40%;
+  width: 30%;
   height: 100%;
-  padding: 0;
+  padding:0;
   margin: 0;
   display: flex;
   justify-content: center;
 }
 .navigation nav .brand img {
-  width: 250px;
-  height: 100px;
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
   margin: 5px;
+  filter: brightness(110%);
 }
 .navigation nav ul {
   padding: 5px;
   margin-top: 30px;
-  width: 60%;
+  width: 70%;
   height: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 .navigation nav ul li {
   padding: 10px;
@@ -176,7 +177,7 @@ export default {
 }
 .modal {
   display: block;
-  margin-top: 5%;
+  margin-top:10px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -184,10 +185,9 @@ export default {
 }
 .modal .modal-content{
   width: 800px;
-  height: 500px;
+  height: 480px;
   padding: 0;
   margin-left: -30%;
-
 }
 .modal .modal-content .modal-header{
   width: 100%;
@@ -200,7 +200,7 @@ export default {
 }
 .modal .modal-content .modal-header h5{
   font-size: 1.2rem;
-  font-weight: 450;
+  font-weight: 500;
   text-align: center;
   color: #ff4500;
   text-transform: uppercase;

@@ -1,9 +1,19 @@
 <template>
   <div id="home" class="home">
     <div class="image">
-      <a href="/">
-      <img src="../../assets/image/home1.jpg" />
-      </a>
+      <ul>
+        <li><p>U</p></li>
+        <li><p>L</p></li>
+        <li><p>T</p></li>
+        <li><p>R</p></li>
+        <li><p>A</p></li>
+        <li><p>W</p></li>
+        <li><p>A</p></li>
+        <li><p>V</p></li>
+        <li><p>E</p></li>
+        <li><p>:)</p></li>
+      </ul>
+      <!-- <img src="../../assets/image/home1.jpg"/> -->
     </div>
 
     <div class="container">
@@ -19,6 +29,7 @@
               <div class="card-body">
                 <h4>{{ work.name }}</h4>
                 <p>{{ work.des }}</p>
+                <router-link :to="work.url">view</router-link>
               </div>
             </div>
           </div>
@@ -176,7 +187,9 @@
                 </ul>
               </div>
               <div class="card-footer">
-                <button class="btn btn-primary">Details</button>
+                <button class="btn btn-primary">
+                  <router-link :to="pdl.url">Details</router-link>
+                </button>
               </div>
             </div>
           </div>
@@ -240,24 +253,28 @@ export default {
           name: "Graphics",
           des: "Logo design, Banner, Vector shape, Animations",
           icon: "fa fa-flag-checkered",
+          url: "/graphics",
         },
         {
           id: 2,
           name: "Website",
           des: "using php, MySql, vue.js, Bootstrap, JavaScript",
           icon: "fa fa-cogs",
+          url: "/website",
         },
         {
           id: 3,
           name: "Photography",
           des: "Indor & Outdoor Photoshoot, video with editing",
           icon: "fa fa-camera-retro",
+          url: "/photoraphy",
         },
         {
           id: 4,
           name: "Digital Marketing",
           des: "SEO, SMS, Facebook boost, page maintain",
           icon: "fa fa-globe",
+          url: "/dm",
         },
       ],
 
@@ -271,6 +288,7 @@ export default {
           tx3: "Facebook page maintain(1 month)",
           tx4: "Provide hosting",
           tx5: "Maintain Support",
+          url: "/basic",
         },
         {
           id: 2,
@@ -281,6 +299,7 @@ export default {
           tx3: "Facebook page maintain(3 month)",
           tx4: "Prodive hosting",
           tx5: "Maintain Support",
+          url: "/silver",
         },
         {
           id: 3,
@@ -291,6 +310,7 @@ export default {
           tx3: "Facebook page maintain(6 month)",
           tx4: "Prodive hosting",
           tx5: "Maintain Support",
+          url: "/gold",
         },
       ],
 
@@ -341,6 +361,10 @@ export default {
     };
   },
   components: {},
+
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 
@@ -358,20 +382,96 @@ export default {
   height: 450px;
   padding: 0;
   margin: 0;
+  background: rgba(0, 0, 0, 0.116);
+  display: flex;
+  /* background-image: url(../../assets/image/home1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
-.image img {
+.image ul {
+  top: 100px;
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  display: flex;
+}
+.image ul li {
+  width: 10%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  animation: square 5s infinite;
+}
+.image ul li p{
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  margin-top: 200px;
+}
+.image ul li:nth-child(1) {
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: violet;
+}
+.image ul li:nth-child(2) {
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: blue;
+}
+.image ul li:nth-child(3) {
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: skyblue;
+}
+.image ul li:nth-child(4) {
+
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: green;
+}
+.image ul li:nth-child(5) {
+
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: yellow;
+}
+.image ul li:nth-child(6) {
+
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: orangered;
+}
+.image ul li:nth-child(7) {
+
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: red;
+}
+.image ul li:nth-child(8) {
+
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: rgb(136, 165, 30);
+}
+.image ul li:nth-child(9) {
+
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: rgb(17, 74, 160);
+}
+.image ul li:nth-child(10) {
+
+  animation-delay: 1s;
+  animation-direction: 5s;
+  background: rgb(66, 146, 86);
 }
 .home section {
   padding-top: 100px;
-  background: #221611;
+  background: #ff440080;
   background-attachment: fixed;
 }
 .home .row {
@@ -468,6 +568,12 @@ export default {
   font-weight: 700;
   text-align: center;
   font-family: "Lato", sans-serif;
+}
+.row .col-md-12 .products .card .card-body a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
 }
 /* about */
 .row .col-md-12 .about {
@@ -664,6 +770,12 @@ export default {
 .row .col-md-12 .product-list .card .card-footer .btn {
   margin: 20px;
 }
+.row .col-md-12 .product-list .card .card-footer .btn a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
 /* testimonials */
 .row .col-md-12 .testemonials {
   width: 100%;
@@ -737,5 +849,48 @@ export default {
   padding: 0;
   margin: 0;
   text-align: center;
+}
+
+@keyframes square {
+  0% {
+    transform:rotateY(0deg);
+    opacity: 1;
+  }
+  10% {
+    transform: rotateY(20deg);
+    opacity: 1;
+  }
+    20% {
+      transform: rotateY(40deg);
+    opacity: 1;
+  }
+    30% {
+      transform: rotateY(60deg);
+    opacity: 1;
+  }
+    40% {
+      transform: rotateY(80deg);
+    opacity: 1;
+  }
+    50% {
+    transform: rotateY(100deg);
+    opacity: 1;
+  }
+    60% {
+    transform: rotateY(120deg);
+    opacity: 1;
+  }
+    70% {
+    transform: rotateY(140deg);
+    opacity: 1;
+  }
+    80% {
+    transform: rotateY(160deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
 }
 </style>
