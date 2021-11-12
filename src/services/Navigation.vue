@@ -10,7 +10,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#plans">Plans</a></li>
         <li><a href="#testimonial">Testimonials</a></li>
-        <li><a href="#client">Client</a></li>
+        <li><a href="#client">Clients</a></li>
         <li><button @click="onClick()">Contact</button></li>
       </ul>
     </nav>

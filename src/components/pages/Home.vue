@@ -403,7 +403,7 @@ export default {
   padding: 0;
   margin: 0;
   display: block;
-  animation: square 5s infinite;
+  animation: square 8s infinite;
 }
 .image ul li p{
   font-size: 2rem;
@@ -411,6 +411,7 @@ export default {
   color: #000;
   text-align: center;
   margin-top: 200px;
+  transform: scale(-1, 1);
 }
 .image ul li:nth-child(1) {
   animation-delay: 1s;
@@ -443,13 +444,13 @@ export default {
 
   animation-delay: 1s;
   animation-direction: 5s;
-  background: orangered;
+  background: rgb(158, 173, 104);
 }
 .image ul li:nth-child(7) {
 
   animation-delay: 1s;
   animation-direction: 5s;
-  background: red;
+  background: rgb(173, 30, 161);
 }
 .image ul li:nth-child(8) {
 
@@ -467,7 +468,7 @@ export default {
 
   animation-delay: 1s;
   animation-direction: 5s;
-  background: rgb(66, 146, 86);
+  background: rgb(116, 20, 76);
 }
 .home section {
   padding-top: 100px;
@@ -856,11 +857,15 @@ export default {
     transform:rotateY(0deg);
     opacity: 1;
   }
-  10% {
-    transform: rotateY(20deg);
+  40% {
+    transform: rotateY(180deg);
     opacity: 1;
   }
-    20% {
+  50% {
+    transform: rotateY(-10deg);
+    opacity: 1;
+  }
+    /* 20% {
       transform: rotateY(40deg);
     opacity: 1;
   }
@@ -883,14 +888,14 @@ export default {
     70% {
     transform: rotateY(140deg);
     opacity: 1;
-  }
-    80% {
-    transform: rotateY(160deg);
+  } */
+    90% {
+    transform: rotateY(-90deg);
     opacity: 1;
   }
   100% {
-    transform: rotateY(180deg);
-    opacity: 0;
+    transform: rotateY(-180deg);
+    opacity: 1;
   }
 }
 </style>

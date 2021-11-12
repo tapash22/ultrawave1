@@ -22,18 +22,18 @@
       <div class="col-md-2">
         <h5>Website</h5>
         <ul>
+          <li>Template</li>
           <li>Static website</li>
-          <li>Semi-Dynamic</li>
           <li>Dynamic</li>
         </ul>
       </div>
       <div class="col-md-2">
         <h5>Photography</h5>
         <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
+          <li>Indoor</li>
+          <li>Outdoor</li>
+          <li>Branding</li>
+          <li>Video</li>
         </ul>
       </div>
       <div class="col-md-2">
