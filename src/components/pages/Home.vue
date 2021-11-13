@@ -293,7 +293,7 @@ export default {
         {
           id: 2,
           name: "Silver",
-          tx: "Semi-Dynamic website",
+          tx: "Dynamic website",
           tx1: "Graphics support",
           tx2: "Facebook boosting(5 time)",
           tx3: "Facebook page maintain(3 month)",
@@ -317,35 +317,45 @@ export default {
       testimoniels: [
         {
           id: 1,
-          name: "company name",
-          des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. EsseLorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+          name: "BioGreen International Ltd",
+          des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         },
         {
           id: 2,
-          name: "company name",
-          des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. EsseLorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+          name: "AgroTech Global BD Nutrition",
+          des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        },
+        {
+          id: 3,
+          name: "Green Vet Pherma",
+          des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        },
+        {
+          id: 4,
+          name: "Novatech",
+          des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         },
       ],
       clients: [
         {
           id: 1,
-          name: "company name",
-          image: require("../../assets/logo.png"),
+          name: "BioGreen",
+          image: require("../../assets/image/biogreen.jpg"),
         },
         {
           id: 2,
-          name: "company name",
-          image: require("../../assets/logo.png"),
+          name: "AgroTech Global ",
+          image: require("../../assets/image/agrotech.jpg"),
         },
         {
           id: 3,
-          name: "company name",
-          image: require("../../assets/logo.png"),
+          name: "Green Vet Pherma",
+          image: require("../../assets/image/greenvet.jpg"),
         },
         {
           id: 4,
-          name: "company name",
-          image: require("../../assets/logo.png"),
+          name: "Novatech",
+          image: require("../../assets/image/novatech.jpg"),
         },
         {
           id: 5,
@@ -384,10 +394,6 @@ export default {
   margin: 0;
   background: rgba(0, 0, 0, 0.116);
   display: flex;
-  /* background-image: url(../../assets/image/home1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
 }
 .image ul {
   top: 100px;
@@ -405,8 +411,8 @@ export default {
   display: block;
   animation: square 8s infinite;
 }
-.image ul li p{
-  font-size: 2rem;
+.image ul li p {
+  font-size: 2.5rem;
   font-weight: 900;
   color: #000;
   text-align: center;
@@ -429,43 +435,36 @@ export default {
   background: skyblue;
 }
 .image ul li:nth-child(4) {
-
   animation-delay: 1s;
   animation-direction: 5s;
   background: green;
 }
 .image ul li:nth-child(5) {
-
   animation-delay: 1s;
   animation-direction: 5s;
   background: yellow;
 }
 .image ul li:nth-child(6) {
-
   animation-delay: 1s;
   animation-direction: 5s;
   background: rgb(158, 173, 104);
 }
 .image ul li:nth-child(7) {
-
   animation-delay: 1s;
   animation-direction: 5s;
   background: rgb(173, 30, 161);
 }
 .image ul li:nth-child(8) {
-
   animation-delay: 1s;
   animation-direction: 5s;
   background: rgb(136, 165, 30);
 }
 .image ul li:nth-child(9) {
-
   animation-delay: 1s;
   animation-direction: 5s;
   background: rgb(17, 74, 160);
 }
 .image ul li:nth-child(10) {
-
   animation-delay: 1s;
   animation-direction: 5s;
   background: rgb(116, 20, 76);
@@ -854,7 +853,7 @@ export default {
 
 @keyframes square {
   0% {
-    transform:rotateY(0deg);
+    transform: rotateY(0deg);
     opacity: 1;
   }
   40% {
@@ -865,7 +864,7 @@ export default {
     transform: rotateY(-10deg);
     opacity: 1;
   }
-    /* 20% {
+  /* 20% {
       transform: rotateY(40deg);
     opacity: 1;
   }
@@ -889,7 +888,7 @@ export default {
     transform: rotateY(140deg);
     opacity: 1;
   } */
-    90% {
+  90% {
     transform: rotateY(-90deg);
     opacity: 1;
   }
