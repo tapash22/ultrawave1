@@ -121,7 +121,8 @@ export default {
   padding: 0;
   margin: 0;
   display: flex;
-  background: #fff;
+  background: #EFF0D1;
+  box-shadow: 0 0 10px #FF834F;
 }
 .navigation nav .brand {
   width: 30%;
@@ -158,7 +159,7 @@ export default {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
-  color: #ff4500;
+  color: #000;
 }
 
 .navigation nav ul li button {
@@ -167,13 +168,13 @@ export default {
   padding: 5px;
   display: flex;
   justify-content: center;
-  background: #ff4500;
+  background: #B7C3F3;
   margin-top: -5px;
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
 .modal {
   display: block;

@@ -50,34 +50,34 @@
       <div class="col-md-12">
         <p>All right reserved in &copy; Ultrawave Communications</p>
       </div>
-
     </div>
   </div>
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Poppins:wght@100&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Poppins:wght@100&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap");
 
 .footer {
   width: 100%;
   height: auto;
-  padding: 2px;
+  padding: 0;
   margin: 0;
   position: relative;
   background: rgb(32, 32, 32);
+  box-shadow: 0 0 10px #ff834f;
 }
 .row {
   padding: 5px;
   margin: 0;
   width: 100%;
   height: 100%;
-  background: rgba(32, 32, 32, 0.747);
+  background: #eff0d1;
 }
 h5 {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #ff4500;
+  color: #000;
   text-align: justify;
   padding: 5px;
   margin: 0;
@@ -94,7 +94,7 @@ h5 {
   text-align: justify;
   padding: 10px;
   margin: 0;
-  color: rgb(163, 162, 162);
+  color: #000;
 }
 .col-md-2 {
   width: 17%;
@@ -102,30 +102,40 @@ h5 {
   padding: 10px;
   margin: 0;
 }
+.col-md-2 h5 {
+  font-family: "Lobster", cursive;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
 .col-md-2 ul {
   width: 100%;
   height: 100%;
   padding: 10px;
   margin: 0;
-  border-left: 1px solid rgb(163, 162, 162);
+  /* border-left: 1px solid rgb(163, 162, 162); */
 }
 .col-md-2 ul li {
   list-style: none;
   font-size: 1rem;
   font-weight: 500;
-  color: rgb(163, 162, 162);
-  text-align: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
   padding: 5px;
   margin: 0;
 }
-.bottom{
+.bottom {
   width: 100%;
   height: 100%;
   padding: 5px;
   margin: 0;
-  border-top: 1px solid #ff4500;
+  /* border-top: 1px solid #ff4500; */
+  box-shadow: 0 0 10px #ff834f;
 }
-.bottom .col-md-12{
+.bottom .col-md-12 {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -133,13 +143,12 @@ h5 {
   display: flex;
   justify-content: center;
 }
-.bottom .col-md-12 p{
+.bottom .col-md-12 p {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px;
   margin: 0;
-  color:#ff4500;
+  color: #000;
   text-align: center;
 }
-
 </style>
