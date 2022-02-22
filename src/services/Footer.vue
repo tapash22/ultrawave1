@@ -90,7 +90,8 @@ h5 {
 }
 .col-md-4 .wrap {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
   text-align: justify;
   padding: 10px;
   margin: 0;
@@ -121,8 +122,9 @@ h5 {
 .col-md-2 ul li {
   list-style: none;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: rgb(0, 0, 0);
+  font-family: 'Playfair Display', serif;
   text-align: center;
   padding: 5px;
   margin: 0;
@@ -145,7 +147,8 @@ h5 {
 }
 .bottom .col-md-12 p {
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
   padding: 5px;
   margin: 0;
   color: #000;
