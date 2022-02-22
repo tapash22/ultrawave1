@@ -66,6 +66,8 @@
             velit accusamus, autem amet similique odio tempora aliquam molestias
             asperiores at debitis molestiae sint voluptatibus corrupti enim.
             Harum, in nostrum.sint voluptatibus corrupti enim.
+            in nostrum.sint voluptatibus corrupti enim.
+            in nostrum.sint voluptatibus corrupti enim.
           </p>
         </div>
       </div>
@@ -162,7 +164,15 @@
     <div class="row about">
       <h2>We are</h2>
       <p>Introduct with ultrawave digital</p>
-      <div class="col-md-4">
+      <div
+        class="col-md-4"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="300"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
         <div class="box">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -172,27 +182,33 @@
           </p>
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8" 
+      data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="300"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false">
         <Carousel />
       </div>
     </div>
 
     <div class="row contact">
-      <h2>Contact us</h2>
-      <p>Feel free to contact us</p>
       <div class="col-md-4 message">
-        <form>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter your email"
-            />
-            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-          </div>
-        </form>
+          <h2>Contact us</h2>
+          <p>Feel free to contact us</p>
       </div>
       <div class="col-md-8 icons">
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </div>
+          </form>
         <ul>
           <li>
             <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -203,10 +219,7 @@
           <li>
             <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
           </li>
-          <li>
-            <a href=""><i class="fa fa-anchor" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="">+8801674345763</a></li>
+          <li><a href="">+8801877136747</a></li>
         </ul>
       </div>
     </div>
@@ -218,16 +231,17 @@ import Carousel from "../../services/Carousel.vue";
 
 export default {
   data() {
+
     return {
       works: [
         {
           id: 1,
-          name: "Graphics",
-          des: "Logo design, Banner, Vector shape, Animations",
-          icon: "fa fa-flag-checkered",
-          url: "/graphics",
+          name: "Digital Marketing",
+          des: "SEO, SMS, Facebook boost, page maintain",
+          icon: "fa fa-globe",
+          url: "/dm",
         },
-        {
+       {
           id: 2,
           name: "Website",
           des: "using php, MySql, vue.js, Bootstrap, JavaScript",
@@ -236,17 +250,17 @@ export default {
         },
         {
           id: 3,
+          name: "Graphics",
+          des: "Logo design, Banner, Vector shape, Animations",
+          icon: "fa fa-flag-checkered",
+          url: "/graphics",
+        },
+        {
+          id: 4,
           name: "Photography",
           des: "Indor & Outdoor Photoshoot, video with editing",
           icon: "fa fa-camera-retro",
           url: "/photoraphy",
-        },
-        {
-          id: 4,
-          name: "Digital Marketing",
-          des: "SEO, SMS, Facebook boost, page maintain",
-          icon: "fa fa-globe",
-          url: "/dm",
         },
       ],
 

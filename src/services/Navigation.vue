@@ -4,7 +4,7 @@
       <a class="brand" href="/">
         <img src="../assets/image/log.png" />
       </a>
-      <ul>
+      <!-- <ul>
         <li><router-link to="/">Home</router-link></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -12,7 +12,7 @@
         <li><a href="#testimonial">Testimonials</a></li>
         <li><a href="#client">Clients</a></li>
         <li><button @click="onClick()">Contact</button></li>
-      </ul>
+      </ul> -->
     </nav>
     <div
       class="modal"
@@ -121,7 +121,7 @@ export default {
   padding: 0;
   margin: 0;
   display: flex;
-  background: #EFF0D1;
+  background: #2EC4B6;
   box-shadow: 0 0 10px #FF834F;
 }
 .navigation nav .brand {

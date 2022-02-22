@@ -93,7 +93,7 @@
   height: 100%;
   padding:0;
   margin: 0;
-  background: #20a6f38a;
+  background: #20A4F3;
 }
 .home .product h2{
   font-size: 2rem;
@@ -112,9 +112,9 @@
   margin: 0;
 }
 .product .col-md-8{
-  background: #20A4F3;
+  background: #2EC4B6;
   padding:0;
-  margin-top: 10px;
+  margin-top: 0;
   width: 75%;
   height: 100%;
 }
@@ -181,14 +181,14 @@
   width: 25%;
   height: 100%;
   padding: 0;
-  margin-top: -50px;
+  margin:0;
+  background: #20A4F3;
 }
 .product .col-md-4 .box{
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 15px;
   margin: 0;
-  background: #F6F7F8;
   /* border-top-left-radius: 15px;
   border-bottom-left-radius: 15px; */
   border: 1px solid #F6F7F8;
@@ -199,7 +199,7 @@
   font-weight: 500;
   padding: 0;
   margin: 0;
-  color: #000;
+  color: #F6F7F8;
 }
 .home .services{
   width: 100%;
@@ -318,8 +318,8 @@
 }
 .clients .tech-slideshow {
   height: 200px;
-  /* max-width: 800px; */
-  width: 100%;
+  max-width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -329,8 +329,8 @@
 
 .tech-slideshow > div {
   height: 200px;
-  width: 2526px;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  width: 3100px;
+  background: url(../image/partner.jpg);
   position: absolute;
   top: 0;
   left: 0;
@@ -426,16 +426,24 @@
   margin: 0;
   background: #20A4F3;
 }
-.home .contact h2{
+.home .contact .message{
+  width: 30%;
+  height: auto;
+  padding: 50px;
+  margin:0;
+  background: #20A4F3;
+  display: block;
+}
+.home .contact .message h2{
   font-size: 2rem;
   font-weight: 900;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  padding-top:40px;
+  padding:0;
   margin: 0;
   z-index: 1;
 }
-.home .contact p{
+.home .contact .message p{
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
@@ -444,19 +452,20 @@
   margin: 0;
   z-index: 1;
 }
-.home .contact .message{
-  width: 30%;
-  height: auto;
-  padding: 0;
-  margin:0;
-  background: #20A4F3;
+
+.home .contact .icons{
+  width: 70%;
+  height: 180px;
+  padding-top: 50px;
+  margin-top: 0;
+  background: #2EC4B6;
   display: flex;
 }
-.contact .message form{
+.contact .icons form{
   padding:10px;
   width: 100%;
 }
-.contact .message form .form-group{
+.contact .icons form .form-group{
   display: flex;
   width: 100%;
 }
@@ -480,19 +489,13 @@ form .form-group i{
   margin: 0;
   color: #F6F7F8;
 }
-.home .contact .icons{
-  width: 70%;
-  height: 220px;
-  padding: 10px;
-  margin-top: -110px;
-  background: #2EC4B6;
-}
 .contact .icons ul{
-  padding-top: 100px;
-  padding-left: 50px;
+  padding-top: 0;
+  padding-left: 0;
   width: 100%;
   margin: 0;
   display: flex;
+  justify-content: center;
 }
 .contact .icons ul li{
   list-style: none;
