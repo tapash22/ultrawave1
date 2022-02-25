@@ -14,6 +14,39 @@
   background: rgba(0, 0, 0, 0.116);
   display: flex;
 }
+.image #myVideo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+.image #myVideo .video{
+  width: 100%;
+  height: 100%;
+  padding:0;
+  margin:0;
+}
+.image h2{
+  position: absolute;
+  z-index: 1;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  margin-top: 150px;
+  margin-left: 100px;
+  color: rgb(194, 137, 31);
+}
+.image h3{
+  position: absolute;
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  margin-top: 210px;
+  margin-left: 130px;
+  color: rgb(194, 137, 31);
+}
 .image ul {
   top: 100px;
   width: 100%;

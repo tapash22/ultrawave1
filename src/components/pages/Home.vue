@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="home">
     <div class="image">
-      <ul>
+      <!-- <ul>
         <li><p>U</p></li>
         <li><p>L</p></li>
         <li><p>T</p></li>
@@ -12,8 +12,15 @@
         <li><p>V</p></li>
         <li><p>E</p></li>
         <li><p>:)</p></li>
-      </ul>
+      </ul> -->
+      <video autoplay muted loop id="myVideo">
+        <source src="../../assets/video/rain.mp4" type="video/mp4" class="video" />
+        Your browser does not support HTML5 video.
+      </video>
+      <h2>Ultrawave Digital</h2>
+      <h3>WE belive in change</h3>
     </div>
+
     <div class="row product">
       <h2>We Provide</h2>
       <p
@@ -65,9 +72,9 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad
             velit accusamus, autem amet similique odio tempora aliquam molestias
             asperiores at debitis molestiae sint voluptatibus corrupti enim.
-            Harum, in nostrum.sint voluptatibus corrupti enim.
-            in nostrum.sint voluptatibus corrupti enim.
-            in nostrum.sint voluptatibus corrupti enim.
+            Harum, in nostrum.sint voluptatibus corrupti enim. in nostrum.sint
+            voluptatibus corrupti enim. in nostrum.sint voluptatibus corrupti
+            enim.
           </p>
         </div>
       </div>
@@ -182,33 +189,35 @@
           </p>
         </div>
       </div>
-      <div class="col-md-8" 
-      data-aos="fade-left"
+      <div
+        class="col-md-8"
+        data-aos="fade-left"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="300"
         data-aos-easing="ease-in-out"
-        data-aos-once="false">
+        data-aos-once="false"
+      >
         <Carousel />
       </div>
     </div>
 
     <div class="row contact">
       <div class="col-md-4 message">
-          <h2>Contact us</h2>
-          <p>Feel free to contact us</p>
+        <h2>Contact us</h2>
+        <p>Feel free to contact us</p>
       </div>
       <div class="col-md-8 icons">
-          <form>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Enter your email"
-              />
-              <i class="fa fa-paper-plane" aria-hidden="true"></i>
-            </div>
-          </form>
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+        </form>
         <ul>
           <li>
             <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -231,7 +240,6 @@ import Carousel from "../../services/Carousel.vue";
 
 export default {
   data() {
-
     return {
       works: [
         {
@@ -241,7 +249,7 @@ export default {
           icon: "fa fa-globe",
           url: "/dm",
         },
-       {
+        {
           id: 2,
           name: "Website",
           des: "using php, MySql, vue.js, Bootstrap, JavaScript",
